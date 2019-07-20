@@ -12,6 +12,10 @@
 		04CE743122E2D5330099D708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CE742F22E2D5330099D708 /* Main.storyboard */; };
 		04CE743322E2D5350099D708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CE743222E2D5350099D708 /* Assets.xcassets */; };
 		04CE743622E2D5350099D708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CE743422E2D5350099D708 /* LaunchScreen.storyboard */; };
+		04CE743E22E2D9C10099D708 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CE743D22E2D9C10099D708 /* OnBoarding.storyboard */; };
+		04CE744122E2DC630099D708 /* OnboardingFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE744022E2DC630099D708 /* OnboardingFirstViewController.swift */; };
+		04CE744322E2DC7D0099D708 /* OnboardingSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE744222E2DC7D0099D708 /* OnboardingSecondViewController.swift */; };
+		04CE744522E2DC8A0099D708 /* OnboardingThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE744422E2DC8A0099D708 /* OnboardingThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		04CE743222E2D5350099D708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04CE743522E2D5350099D708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04CE743722E2D5350099D708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CE743D22E2D9C10099D708 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
+		04CE744022E2DC630099D708 /* OnboardingFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFirstViewController.swift; sourceTree = "<group>"; };
+		04CE744222E2DC7D0099D708 /* OnboardingSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSecondViewController.swift; sourceTree = "<group>"; };
+		04CE744422E2DC8A0099D708 /* OnboardingThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +65,23 @@
 				04CE742B22E2D5330099D708 /* AppDelegate.swift */,
 				04CE742D22E2D5330099D708 /* ViewController.swift */,
 				04CE742F22E2D5330099D708 /* Main.storyboard */,
+				04CE743F22E2DC270099D708 /* Onboarding */,
 				04CE743222E2D5350099D708 /* Assets.xcassets */,
 				04CE743422E2D5350099D708 /* LaunchScreen.storyboard */,
 				04CE743722E2D5350099D708 /* Info.plist */,
 			);
 			path = "Koombea-iOSTest";
+			sourceTree = "<group>";
+		};
+		04CE743F22E2DC270099D708 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				04CE743D22E2D9C10099D708 /* OnBoarding.storyboard */,
+				04CE744022E2DC630099D708 /* OnboardingFirstViewController.swift */,
+				04CE744222E2DC7D0099D708 /* OnboardingSecondViewController.swift */,
+				04CE744422E2DC8A0099D708 /* OnboardingThirdViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +145,7 @@
 				04CE743622E2D5350099D708 /* LaunchScreen.storyboard in Resources */,
 				04CE743322E2D5350099D708 /* Assets.xcassets in Resources */,
 				04CE743122E2D5330099D708 /* Main.storyboard in Resources */,
+				04CE743E22E2D9C10099D708 /* OnBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +157,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04CE742E22E2D5330099D708 /* ViewController.swift in Sources */,
+				04CE744322E2DC7D0099D708 /* OnboardingSecondViewController.swift in Sources */,
 				04CE742C22E2D5330099D708 /* AppDelegate.swift in Sources */,
+				04CE744122E2DC630099D708 /* OnboardingFirstViewController.swift in Sources */,
+				04CE744522E2DC8A0099D708 /* OnboardingThirdViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

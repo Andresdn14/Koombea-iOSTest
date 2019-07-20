@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding First View Controller-->
+        <scene sceneID="rpL-xE-7U1">
+            <objects>
+                <viewController storyboardIdentifier="onBoardingStoryboard" id="2lK-Gc-lae" customClass="OnboardingFirstViewController" customModule="Koombea_iOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="66a-0e-hXf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="first Onboarding screen" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E93-It-2wr">
+                                <rect key="frame" x="101" y="335" width="212" height="226"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caS-PL-Pao">
+                                <rect key="frame" x="113" y="588" width="162" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Onboard 1">
+                                    <color key="titleShadowColor" red="0.94666272399999996" green="0.63531249759999997" blue="0.22338479759999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="FirstNext:" destination="2lK-Gc-lae" eventType="touchUpInside" id="BQy-nf-jSh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tJi-fZ-f4Y" firstAttribute="trailing" secondItem="caS-PL-Pao" secondAttribute="trailing" constant="139" id="0Cf-Cs-fb4"/>
+                            <constraint firstItem="E93-It-2wr" firstAttribute="centerY" secondItem="66a-0e-hXf" secondAttribute="centerY" id="9Wb-rj-MTb"/>
+                            <constraint firstItem="caS-PL-Pao" firstAttribute="leading" secondItem="tJi-fZ-f4Y" secondAttribute="leading" constant="113" id="AAq-dJ-WXE"/>
+                            <constraint firstItem="caS-PL-Pao" firstAttribute="top" secondItem="E93-It-2wr" secondAttribute="bottom" constant="27" id="BgU-5n-bFS"/>
+                            <constraint firstItem="E93-It-2wr" firstAttribute="centerX" secondItem="66a-0e-hXf" secondAttribute="centerX" id="T7I-Ay-tPA"/>
+                            <constraint firstItem="E93-It-2wr" firstAttribute="top" secondItem="tJi-fZ-f4Y" secondAttribute="top" constant="291" id="aHF-zF-xoK"/>
+                            <constraint firstItem="E93-It-2wr" firstAttribute="leading" secondItem="tJi-fZ-f4Y" secondAttribute="leading" constant="101" id="okv-MP-3gS"/>
+                            <constraint firstItem="tJi-fZ-f4Y" firstAttribute="bottom" secondItem="caS-PL-Pao" secondAttribute="bottom" constant="245" id="rec-Lu-tWa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tJi-fZ-f4Y"/>
+                    </view>
+                    <connections>
+                        <segue destination="f8b-jf-q7a" kind="show" identifier="firstToSecond" id="ZlN-Mo-kpU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r9e-FO-lUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-255.07246376811597" y="-130.58035714285714"/>
+        </scene>
+        <!--Onboarding Second View Controller-->
+        <scene sceneID="47t-bR-rEY">
+            <objects>
+                <viewController id="f8b-jf-q7a" customClass="OnboardingSecondViewController" customModule="Koombea_iOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kan-Dr-tIm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second One" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qll-zM-WU2">
+                                <rect key="frame" x="101" y="335" width="212" height="226"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZu-S9-cGP">
+                                <rect key="frame" x="100" y="565" width="188" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Onboarding 2"/>
+                                <connections>
+                                    <action selector="secondNextB:" destination="f8b-jf-q7a" eventType="touchUpInside" id="MJQ-3h-qwE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qll-zM-WU2" firstAttribute="leading" secondItem="GmN-eo-Hma" secondAttribute="leading" constant="101" id="IpG-Sz-Un7"/>
+                            <constraint firstItem="qll-zM-WU2" firstAttribute="top" secondItem="GmN-eo-Hma" secondAttribute="top" constant="291" id="Re3-Kn-jNk"/>
+                            <constraint firstItem="qll-zM-WU2" firstAttribute="centerY" secondItem="kan-Dr-tIm" secondAttribute="centerY" id="Z9I-Fd-Sr4"/>
+                            <constraint firstItem="qll-zM-WU2" firstAttribute="centerX" secondItem="kan-Dr-tIm" secondAttribute="centerX" id="mVE-lM-bQb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GmN-eo-Hma"/>
+                    </view>
+                    <connections>
+                        <segue destination="Q4D-Ez-iWF" kind="show" identifier="secondToThird" id="Y00-IL-Dgx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gz6-Rw-bH5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="525" y="-131"/>
+        </scene>
+        <!--Onboarding Third View Controller-->
+        <scene sceneID="9ep-LX-mLE">
+            <objects>
+                <viewController id="Q4D-Ez-iWF" customClass="OnboardingThirdViewController" customModule="Koombea_iOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hsj-xM-GTS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Third One" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6EA-PN-Fs1">
+                                <rect key="frame" x="127" y="425" width="161" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtW-Mn-8Me">
+                                <rect key="frame" x="133" y="573" width="148" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5av-QP-zEu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Onboard 3"/>
+                                <connections>
+                                    <action selector="getStartedButton:" destination="Q4D-Ez-iWF" eventType="touchUpInside" id="OX3-J3-oO7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hLv-Dx-Aza" firstAttribute="bottom" secondItem="RtW-Mn-8Me" secondAttribute="bottom" constant="259" id="31V-mZ-65X"/>
+                            <constraint firstItem="6EA-PN-Fs1" firstAttribute="centerX" secondItem="RtW-Mn-8Me" secondAttribute="centerX" id="FwU-37-znz"/>
+                            <constraint firstItem="6EA-PN-Fs1" firstAttribute="centerX" secondItem="Hsj-xM-GTS" secondAttribute="centerX" id="TPQ-7x-Awi"/>
+                            <constraint firstItem="RtW-Mn-8Me" firstAttribute="leading" secondItem="hLv-Dx-Aza" secondAttribute="leading" constant="133" id="UrW-zA-fOy"/>
+                            <constraint firstItem="6EA-PN-Fs1" firstAttribute="centerY" secondItem="Hsj-xM-GTS" secondAttribute="centerY" id="f6E-uf-1yM"/>
+                            <constraint firstItem="6EA-PN-Fs1" firstAttribute="top" secondItem="hLv-Dx-Aza" secondAttribute="top" constant="381" id="olx-6M-Ssl"/>
+                            <constraint firstItem="6EA-PN-Fs1" firstAttribute="leading" secondItem="hLv-Dx-Aza" secondAttribute="leading" constant="127" id="x8C-0e-XCQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hLv-Dx-Aza"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S93-gD-Qr3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1316" y="-131"/>
+        </scene>
+    </scenes>
+</document>
