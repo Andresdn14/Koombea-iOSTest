@@ -7,29 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046531C322E3CD2900C40608 /* OnBoardingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046531C222E3CD2900C40608 /* OnBoardingButton.swift */; };
+		046531CA22E4280300C40608 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046531C922E4280200C40608 /* LaunchScreen.storyboard */; };
+		046531CC22E435F500C40608 /* GetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046531CB22E435F500C40608 /* GetModel.swift */; };
+		046531CE22E4CD4600C40608 /* GamesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046531CD22E4CD4600C40608 /* GamesData.swift */; };
 		04CE742C22E2D5330099D708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE742B22E2D5330099D708 /* AppDelegate.swift */; };
-		04CE742E22E2D5330099D708 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE742D22E2D5330099D708 /* ViewController.swift */; };
+		04CE742E22E2D5330099D708 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE742D22E2D5330099D708 /* GameViewController.swift */; };
 		04CE743122E2D5330099D708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CE742F22E2D5330099D708 /* Main.storyboard */; };
 		04CE743322E2D5350099D708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CE743222E2D5350099D708 /* Assets.xcassets */; };
-		04CE743622E2D5350099D708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CE743422E2D5350099D708 /* LaunchScreen.storyboard */; };
 		04CE743E22E2D9C10099D708 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CE743D22E2D9C10099D708 /* OnBoarding.storyboard */; };
 		04CE744122E2DC630099D708 /* OnboardingFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE744022E2DC630099D708 /* OnboardingFirstViewController.swift */; };
 		04CE744322E2DC7D0099D708 /* OnboardingSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE744222E2DC7D0099D708 /* OnboardingSecondViewController.swift */; };
 		04CE744522E2DC8A0099D708 /* OnboardingThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE744422E2DC8A0099D708 /* OnboardingThirdViewController.swift */; };
+		04CE744922E3A4430099D708 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE744822E3A4430099D708 /* GradientView.swift */; };
+		F9A904B1FE3918D307DED715 /* Pods_Koombea_iOSTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCE347E224E7EFA1D77C2B8 /* Pods_Koombea_iOSTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		046531C222E3CD2900C40608 /* OnBoardingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingButton.swift; sourceTree = "<group>"; };
+		046531C922E4280200C40608 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		046531CB22E435F500C40608 /* GetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetModel.swift; sourceTree = "<group>"; };
+		046531CD22E4CD4600C40608 /* GamesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesData.swift; sourceTree = "<group>"; };
 		04CE742822E2D5330099D708 /* Koombea-iOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Koombea-iOSTest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CE742B22E2D5330099D708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04CE742D22E2D5330099D708 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04CE742D22E2D5330099D708 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		04CE743022E2D5330099D708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04CE743222E2D5350099D708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		04CE743522E2D5350099D708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04CE743722E2D5350099D708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04CE743D22E2D9C10099D708 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		04CE744022E2DC630099D708 /* OnboardingFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFirstViewController.swift; sourceTree = "<group>"; };
 		04CE744222E2DC7D0099D708 /* OnboardingSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSecondViewController.swift; sourceTree = "<group>"; };
 		04CE744422E2DC8A0099D708 /* OnboardingThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingThirdViewController.swift; sourceTree = "<group>"; };
+		04CE744822E3A4430099D708 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		0CCE347E224E7EFA1D77C2B8 /* Pods_Koombea_iOSTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Koombea_iOSTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43DDEFD5AD29292F893DCB5F /* Pods-Koombea-iOSTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Koombea-iOSTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Koombea-iOSTest/Pods-Koombea-iOSTest.debug.xcconfig"; sourceTree = "<group>"; };
+		7AC0523FC45EF6DEE3CE1FB6 /* Pods-Koombea-iOSTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Koombea-iOSTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Koombea-iOSTest/Pods-Koombea-iOSTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +49,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A904B1FE3918D307DED715 /* Pods_Koombea_iOSTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046531C422E4240B00C40608 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				046531CD22E4CD4600C40608 /* GamesData.swift */,
+				046531CB22E435F500C40608 /* GetModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		046531C722E4244100C40608 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04CE742F22E2D5330099D708 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		046531C822E424DB00C40608 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04CE742B22E2D5330099D708 /* AppDelegate.swift */,
+				04CE742D22E2D5330099D708 /* GameViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		04CE741F22E2D5330099D708 = {
 			isa = PBXGroup;
 			children = (
 				04CE742A22E2D5330099D708 /* Koombea-iOSTest */,
 				04CE742922E2D5330099D708 /* Products */,
+				8D9DD89F71074ECBCB7F7874 /* Pods */,
+				9DBEBB5DF08724B4121F8A9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,12 +103,13 @@
 		04CE742A22E2D5330099D708 /* Koombea-iOSTest */ = {
 			isa = PBXGroup;
 			children = (
-				04CE742B22E2D5330099D708 /* AppDelegate.swift */,
-				04CE742D22E2D5330099D708 /* ViewController.swift */,
-				04CE742F22E2D5330099D708 /* Main.storyboard */,
+				046531C822E424DB00C40608 /* Controller */,
+				046531C722E4244100C40608 /* View */,
+				046531C422E4240B00C40608 /* Model */,
 				04CE743F22E2DC270099D708 /* Onboarding */,
 				04CE743222E2D5350099D708 /* Assets.xcassets */,
-				04CE743422E2D5350099D708 /* LaunchScreen.storyboard */,
+				04CE744822E3A4430099D708 /* GradientView.swift */,
+				046531C922E4280200C40608 /* LaunchScreen.storyboard */,
 				04CE743722E2D5350099D708 /* Info.plist */,
 			);
 			path = "Koombea-iOSTest";
@@ -77,11 +119,29 @@
 			isa = PBXGroup;
 			children = (
 				04CE743D22E2D9C10099D708 /* OnBoarding.storyboard */,
+				046531C222E3CD2900C40608 /* OnBoardingButton.swift */,
 				04CE744022E2DC630099D708 /* OnboardingFirstViewController.swift */,
 				04CE744222E2DC7D0099D708 /* OnboardingSecondViewController.swift */,
 				04CE744422E2DC8A0099D708 /* OnboardingThirdViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		8D9DD89F71074ECBCB7F7874 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43DDEFD5AD29292F893DCB5F /* Pods-Koombea-iOSTest.debug.xcconfig */,
+				7AC0523FC45EF6DEE3CE1FB6 /* Pods-Koombea-iOSTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9DBEBB5DF08724B4121F8A9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CCE347E224E7EFA1D77C2B8 /* Pods_Koombea_iOSTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04CE743A22E2D5350099D708 /* Build configuration list for PBXNativeTarget "Koombea-iOSTest" */;
 			buildPhases = (
+				F3738865D6E41C8309FD7433 /* [CP] Check Pods Manifest.lock */,
 				04CE742422E2D5330099D708 /* Sources */,
 				04CE742522E2D5330099D708 /* Frameworks */,
 				04CE742622E2D5330099D708 /* Resources */,
+				463B21513FAD925FEEF106BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,8 +204,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04CE743622E2D5350099D708 /* LaunchScreen.storyboard in Resources */,
 				04CE743322E2D5350099D708 /* Assets.xcassets in Resources */,
+				046531CA22E4280300C40608 /* LaunchScreen.storyboard in Resources */,
 				04CE743122E2D5330099D708 /* Main.storyboard in Resources */,
 				04CE743E22E2D9C10099D708 /* OnBoarding.storyboard in Resources */,
 			);
@@ -151,16 +213,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		463B21513FAD925FEEF106BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Koombea-iOSTest/Pods-Koombea-iOSTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Koombea-iOSTest/Pods-Koombea-iOSTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3738865D6E41C8309FD7433 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Koombea-iOSTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04CE742422E2D5330099D708 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04CE742E22E2D5330099D708 /* ViewController.swift in Sources */,
+				04CE742E22E2D5330099D708 /* GameViewController.swift in Sources */,
 				04CE744322E2DC7D0099D708 /* OnboardingSecondViewController.swift in Sources */,
+				046531CC22E435F500C40608 /* GetModel.swift in Sources */,
 				04CE742C22E2D5330099D708 /* AppDelegate.swift in Sources */,
+				04CE744922E3A4430099D708 /* GradientView.swift in Sources */,
 				04CE744122E2DC630099D708 /* OnboardingFirstViewController.swift in Sources */,
+				046531C322E3CD2900C40608 /* OnBoardingButton.swift in Sources */,
 				04CE744522E2DC8A0099D708 /* OnboardingThirdViewController.swift in Sources */,
+				046531CE22E4CD4600C40608 /* GamesData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,14 +286,6 @@
 				04CE743022E2D5330099D708 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		04CE743422E2D5350099D708 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04CE743522E2D5350099D708 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -304,6 +409,7 @@
 		};
 		04CE743B22E2D5350099D708 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43DDEFD5AD29292F893DCB5F /* Pods-Koombea-iOSTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -322,6 +428,7 @@
 		};
 		04CE743C22E2D5350099D708 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AC0523FC45EF6DEE3CE1FB6 /* Pods-Koombea-iOSTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

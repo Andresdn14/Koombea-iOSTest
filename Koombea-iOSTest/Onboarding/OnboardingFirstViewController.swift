@@ -7,18 +7,24 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 class OnboardingFirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setGradientView(firstHex: "E55249", secondHex: "2A52BE", view: view) //Setting gradient colors in the view
+        
 
 
     }
     
     @IBAction func FirstNext(_ sender: Any) {
-        print("se hundio")
         self.performSegue(withIdentifier: "firstToSecond", sender: self)
     }
+ 
+    
+    
+
     
 }

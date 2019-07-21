@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,20 +14,31 @@
         <scene sceneID="rpL-xE-7U1">
             <objects>
                 <viewController storyboardIdentifier="onBoardingStoryboard" id="2lK-Gc-lae" customClass="OnboardingFirstViewController" customModule="Koombea_iOSTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="66a-0e-hXf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="66a-0e-hXf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="first Onboarding screen" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E93-It-2wr">
-                                <rect key="frame" x="101" y="335" width="212" height="226"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                <nil key="textColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.56999999999999995" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Link_SSB4" translatesAutoresizingMaskIntoConstraints="NO" id="6Uq-cm-gHg">
+                                <rect key="frame" x="0.0" y="44" width="549" height="533"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acces our extended Catalog" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57w-wG-eUc">
+                                <rect key="frame" x="0.0" y="502" width="375" height="159"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="159" id="jUL-9R-23k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caS-PL-Pao">
-                                <rect key="frame" x="113" y="588" width="162" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Onboard 1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caS-PL-Pao" customClass="OnBoardingButton" customModule="Koombea_iOSTest" customModuleProvider="target">
+                                <rect key="frame" x="91.666666666666686" y="669" width="192" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="Otb-eO-4eb"/>
+                                    <constraint firstAttribute="width" constant="192" id="opF-Be-1e9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.94666272399999996" green="0.63531249759999997" blue="0.22338479759999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
@@ -37,14 +48,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="tJi-fZ-f4Y" firstAttribute="trailing" secondItem="caS-PL-Pao" secondAttribute="trailing" constant="139" id="0Cf-Cs-fb4"/>
-                            <constraint firstItem="E93-It-2wr" firstAttribute="centerY" secondItem="66a-0e-hXf" secondAttribute="centerY" id="9Wb-rj-MTb"/>
-                            <constraint firstItem="caS-PL-Pao" firstAttribute="leading" secondItem="tJi-fZ-f4Y" secondAttribute="leading" constant="113" id="AAq-dJ-WXE"/>
-                            <constraint firstItem="caS-PL-Pao" firstAttribute="top" secondItem="E93-It-2wr" secondAttribute="bottom" constant="27" id="BgU-5n-bFS"/>
-                            <constraint firstItem="E93-It-2wr" firstAttribute="centerX" secondItem="66a-0e-hXf" secondAttribute="centerX" id="T7I-Ay-tPA"/>
-                            <constraint firstItem="E93-It-2wr" firstAttribute="top" secondItem="tJi-fZ-f4Y" secondAttribute="top" constant="291" id="aHF-zF-xoK"/>
-                            <constraint firstItem="E93-It-2wr" firstAttribute="leading" secondItem="tJi-fZ-f4Y" secondAttribute="leading" constant="101" id="okv-MP-3gS"/>
-                            <constraint firstItem="tJi-fZ-f4Y" firstAttribute="bottom" secondItem="caS-PL-Pao" secondAttribute="bottom" constant="245" id="rec-Lu-tWa"/>
+                            <constraint firstItem="57w-wG-eUc" firstAttribute="leading" secondItem="6Uq-cm-gHg" secondAttribute="leading" id="98E-z9-UcP"/>
+                            <constraint firstItem="6Uq-cm-gHg" firstAttribute="leading" secondItem="tJi-fZ-f4Y" secondAttribute="leading" id="Dy7-hb-Tpy"/>
+                            <constraint firstItem="6Uq-cm-gHg" firstAttribute="top" secondItem="tJi-fZ-f4Y" secondAttribute="top" id="Og9-aV-4tI"/>
+                            <constraint firstItem="57w-wG-eUc" firstAttribute="top" secondItem="tJi-fZ-f4Y" secondAttribute="top" constant="458" id="OoT-pa-y2V"/>
+                            <constraint firstAttribute="bottom" secondItem="6Uq-cm-gHg" secondAttribute="bottom" constant="235" id="i1w-nX-YAt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Uq-cm-gHg" secondAttribute="trailing" constant="-190" id="iE6-qK-xqL"/>
+                            <constraint firstItem="caS-PL-Pao" firstAttribute="top" secondItem="57w-wG-eUc" secondAttribute="bottom" constant="8" id="lv0-Jg-wFk"/>
+                            <constraint firstAttribute="trailing" secondItem="57w-wG-eUc" secondAttribute="trailing" id="xBi-Qc-kdN"/>
+                            <constraint firstItem="caS-PL-Pao" firstAttribute="centerX" secondItem="66a-0e-hXf" secondAttribute="centerX" id="xg9-3W-VKH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tJi-fZ-f4Y"/>
                     </view>
@@ -54,38 +66,58 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r9e-FO-lUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-255.07246376811597" y="-130.58035714285714"/>
+            <point key="canvasLocation" x="-255.19999999999999" y="-130.78817733990149"/>
         </scene>
         <!--Onboarding Second View Controller-->
         <scene sceneID="47t-bR-rEY">
             <objects>
                 <viewController id="f8b-jf-q7a" customClass="OnboardingSecondViewController" customModule="Koombea_iOSTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kan-Dr-tIm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="kan-Dr-tIm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second One" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qll-zM-WU2">
-                                <rect key="frame" x="101" y="335" width="212" height="226"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                <nil key="textColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Charizard_SSB4" translatesAutoresizingMaskIntoConstraints="NO" id="TIl-s1-biV">
+                                <rect key="frame" x="0.0" y="44" width="493" height="508"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Know the title is worth gaming" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ina-Pe-K0D">
+                                <rect key="frame" x="0.0" y="502" width="375" height="159"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="159" id="4sm-Mw-XWn"/>
+                                    <constraint firstAttribute="width" constant="375" id="Rju-JW-HLL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZu-S9-cGP">
-                                <rect key="frame" x="100" y="565" width="188" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Onboarding 2"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fpj-zG-iC1" customClass="OnBoardingButton" customModule="Koombea_iOSTest" customModuleProvider="target">
+                                <rect key="frame" x="91.666666666666686" y="669" width="192" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="CLv-Sl-PNQ"/>
+                                    <constraint firstAttribute="height" constant="54" id="yzV-2n-hpC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.94666272399999996" green="0.63531249759999997" blue="0.22338479759999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
-                                    <action selector="secondNextB:" destination="f8b-jf-q7a" eventType="touchUpInside" id="MJQ-3h-qwE"/>
+                                    <action selector="FirstNext:" destination="2lK-Gc-lae" eventType="touchUpInside" id="0UY-tl-jeT"/>
+                                    <action selector="secNext:" destination="f8b-jf-q7a" eventType="touchUpInside" id="Xuu-xx-6ds"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="qll-zM-WU2" firstAttribute="leading" secondItem="GmN-eo-Hma" secondAttribute="leading" constant="101" id="IpG-Sz-Un7"/>
-                            <constraint firstItem="qll-zM-WU2" firstAttribute="top" secondItem="GmN-eo-Hma" secondAttribute="top" constant="291" id="Re3-Kn-jNk"/>
-                            <constraint firstItem="qll-zM-WU2" firstAttribute="centerY" secondItem="kan-Dr-tIm" secondAttribute="centerY" id="Z9I-Fd-Sr4"/>
-                            <constraint firstItem="qll-zM-WU2" firstAttribute="centerX" secondItem="kan-Dr-tIm" secondAttribute="centerX" id="mVE-lM-bQb"/>
+                            <constraint firstItem="Ina-Pe-K0D" firstAttribute="top" secondItem="GmN-eo-Hma" secondAttribute="top" constant="458" id="9oj-RK-FwK"/>
+                            <constraint firstAttribute="trailing" secondItem="Ina-Pe-K0D" secondAttribute="trailing" id="CQU-uk-k7b"/>
+                            <constraint firstItem="TIl-s1-biV" firstAttribute="top" secondItem="GmN-eo-Hma" secondAttribute="top" id="Hdc-Mx-Snm"/>
+                            <constraint firstItem="Fpj-zG-iC1" firstAttribute="centerX" secondItem="kan-Dr-tIm" secondAttribute="centerX" id="JXA-Ah-kji"/>
+                            <constraint firstAttribute="bottom" secondItem="TIl-s1-biV" secondAttribute="bottom" constant="260" id="UBa-UY-Vmf"/>
+                            <constraint firstItem="TIl-s1-biV" firstAttribute="leading" secondItem="GmN-eo-Hma" secondAttribute="leading" id="gKh-po-ONo"/>
+                            <constraint firstItem="Ina-Pe-K0D" firstAttribute="centerX" secondItem="kan-Dr-tIm" secondAttribute="centerX" id="lUr-Ht-TeN"/>
+                            <constraint firstItem="Fpj-zG-iC1" firstAttribute="top" secondItem="Ina-Pe-K0D" secondAttribute="bottom" constant="8" id="tY6-Cr-aJA"/>
+                            <constraint firstItem="Ina-Pe-K0D" firstAttribute="leading" secondItem="kan-Dr-tIm" secondAttribute="leading" id="vMp-ps-r7t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TIl-s1-biV" secondAttribute="trailing" constant="-134" id="xjN-fH-VuK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GmN-eo-Hma"/>
                     </view>
@@ -95,50 +127,69 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gz6-Rw-bH5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="525" y="-131"/>
+            <point key="canvasLocation" x="524" y="-131.52709359605913"/>
         </scene>
         <!--Onboarding Third View Controller-->
         <scene sceneID="9ep-LX-mLE">
             <objects>
                 <viewController id="Q4D-Ez-iWF" customClass="OnboardingThirdViewController" customModule="Koombea_iOSTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Hsj-xM-GTS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="Hsj-xM-GTS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Third One" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6EA-PN-Fs1">
-                                <rect key="frame" x="127" y="425" width="161" height="46"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtW-Mn-8Me">
-                                <rect key="frame" x="133" y="573" width="148" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Little_Mac_SSB4" translatesAutoresizingMaskIntoConstraints="NO" id="syl-qW-8ae">
+                                <rect key="frame" x="0.0" y="44" width="375" height="501"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mS-Pv-Jdx" customClass="OnBoardingButton" customModule="Koombea_iOSTest" customModuleProvider="target">
+                                <rect key="frame" x="91.666666666666686" y="669" width="192" height="54"/>
+                                <color key="backgroundColor" red="0.85701483489999997" green="0.18372517820000001" blue="0.41177040339999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="5av-QP-zEu"/>
+                                    <constraint firstAttribute="width" constant="192" id="I64-Gd-eq6"/>
+                                    <constraint firstAttribute="height" constant="54" id="sA8-t5-wm5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Onboard 3"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.94666272399999996" green="0.63531249759999997" blue="0.22338479759999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
-                                    <action selector="getStartedButton:" destination="Q4D-Ez-iWF" eventType="touchUpInside" id="OX3-J3-oO7"/>
+                                    <action selector="FirstNext:" destination="2lK-Gc-lae" eventType="touchUpInside" id="BPQ-eX-qsv"/>
+                                    <action selector="getStarted:" destination="Q4D-Ez-iWF" eventType="touchUpInside" id="LIi-Co-qOP"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Real-time updates" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sah-oy-vb4">
+                                <rect key="frame" x="53.666666666666657" y="502" width="268" height="159"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="159" id="jBJ-hJ-Rrg"/>
+                                    <constraint firstAttribute="width" constant="268" id="knj-9p-KwB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="hLv-Dx-Aza" firstAttribute="bottom" secondItem="RtW-Mn-8Me" secondAttribute="bottom" constant="259" id="31V-mZ-65X"/>
-                            <constraint firstItem="6EA-PN-Fs1" firstAttribute="centerX" secondItem="RtW-Mn-8Me" secondAttribute="centerX" id="FwU-37-znz"/>
-                            <constraint firstItem="6EA-PN-Fs1" firstAttribute="centerX" secondItem="Hsj-xM-GTS" secondAttribute="centerX" id="TPQ-7x-Awi"/>
-                            <constraint firstItem="RtW-Mn-8Me" firstAttribute="leading" secondItem="hLv-Dx-Aza" secondAttribute="leading" constant="133" id="UrW-zA-fOy"/>
-                            <constraint firstItem="6EA-PN-Fs1" firstAttribute="centerY" secondItem="Hsj-xM-GTS" secondAttribute="centerY" id="f6E-uf-1yM"/>
-                            <constraint firstItem="6EA-PN-Fs1" firstAttribute="top" secondItem="hLv-Dx-Aza" secondAttribute="top" constant="381" id="olx-6M-Ssl"/>
-                            <constraint firstItem="6EA-PN-Fs1" firstAttribute="leading" secondItem="hLv-Dx-Aza" secondAttribute="leading" constant="127" id="x8C-0e-XCQ"/>
+                            <constraint firstItem="sah-oy-vb4" firstAttribute="top" secondItem="hLv-Dx-Aza" secondAttribute="top" constant="458" id="4Lq-Hd-4BE"/>
+                            <constraint firstItem="4mS-Pv-Jdx" firstAttribute="centerX" secondItem="Hsj-xM-GTS" secondAttribute="centerX" id="5Kt-bx-P7Q"/>
+                            <constraint firstItem="sah-oy-vb4" firstAttribute="centerX" secondItem="Hsj-xM-GTS" secondAttribute="centerX" id="7kK-8C-Tdu"/>
+                            <constraint firstAttribute="trailing" secondItem="syl-qW-8ae" secondAttribute="trailing" id="ROi-cZ-eZe"/>
+                            <constraint firstItem="4mS-Pv-Jdx" firstAttribute="top" secondItem="sah-oy-vb4" secondAttribute="bottom" constant="8" id="lxh-tg-Ves"/>
+                            <constraint firstAttribute="bottom" secondItem="syl-qW-8ae" secondAttribute="bottom" constant="267" id="w3C-qu-uEn"/>
+                            <constraint firstItem="syl-qW-8ae" firstAttribute="leading" secondItem="hLv-Dx-Aza" secondAttribute="leading" id="wGc-C4-4Ae"/>
+                            <constraint firstItem="syl-qW-8ae" firstAttribute="top" secondItem="hLv-Dx-Aza" secondAttribute="top" id="zfO-QF-En4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hLv-Dx-Aza"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S93-gD-Qr3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1316" y="-131"/>
+            <point key="canvasLocation" x="1316" y="-131.52709359605913"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Charizard_SSB4" width="441" height="441"/>
+        <image name="Link_SSB4" width="443" height="443"/>
+        <image name="Little_Mac_SSB4" width="1200" height="1200"/>
+    </resources>
 </document>
