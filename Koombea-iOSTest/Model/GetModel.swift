@@ -10,13 +10,14 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 import RealmSwift
+import SwiftDate
 
 class GetModel: NSObject {
-    
+
     let realm = try! Realm()
     
     
-    func getData(url: String, parameters: [String:String]){
+    func getData(){
         
         let GAMES_URL = "https://parseapi.back4app.com/classes/Product"
         let APP_ID = "I9pG8SLhTzFA0ImFkXsEvQfXMYyn0MgDBNg10Aps"
@@ -26,30 +27,46 @@ class GetModel: NSObject {
         Alamofire.request(GAMES_URL, method: .get, headers: headers).responseJSON{
             response in
             if response.result.isSuccess {
+                self.deleteAll()
                 if let resValue = response.result.value {
                     let gamesJSON: JSON = JSON(resValue)
                     self.JSONProcessing(json: gamesJSON)
                 print(gamesJSON)
                 }
             }else {
+                
                 print("Error getting data")
             }
         }
     }
-    func str2date(str:String) -> Date {
-        let strdate = str
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-        dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
-        let date = dateFormatter.date(from:strdate)!
-        return date
+    
+    func deleteAll(){
+        do{
+            try realm.write {
+                realm.deleteAll()
+            }
+        }catch{
+            print("Error at deleting")
+        }
     }
+    
+    func saveGame(game:Game){
+        do {
+            try realm.write {
+                realm.add(game)
+            }
+        }catch{
+            print("error trying to save")
+        }
+    }
+    
     
     func JSONProcessing(json:JSON){
         
                 for i in 0...json["results"].count - 1{
                     
                     if json["results"][i]["name"].exists() && json["results"][i]["objectId"].exists() && json["results"][i]["universe"].exists() && json["results"][i]["price"].exists() && json["results"][i]["imageURL"].exists() && json["results"][i]["description"].exists() && json["results"][i]["kind"].exists() && json["results"][i]["popular"].exists() && json["results"][i]["rating"].exists() && json["results"][i]["downloads"].exists() && json["results"][i]["SKU"].exists() && json["results"][i]["createdAt"].exists() && json["results"][i]["updatedAt"].exists() {
+                        
                         let objectId:String = json["results"][i]["objectId"].stringValue
                         let name:String = json["results"][i]["name"].stringValue
                         let universe:String = json["results"][i]["universe"].stringValue
@@ -61,8 +78,11 @@ class GetModel: NSObject {
                         let downloads:String = json["results"][i]["downloads"].stringValue
                         let descripti:String = json["results"][i]["description"].stringValue
                         let SKU:String = json["results"][i]["SKU"].stringValue
-                        let createdAt:Date = str2date(str: json["results"][i]["createdAt"].stringValue)
-                        let updatedAt:Date = str2date(str: json["results"][i]["updatedAt"].stringValue)
+                        guard let createdAt = json["results"][i]["createdAt"].stringValue.toDate()?.date else{fatalError()}
+                        guard let updatedAt = json["results"][i]["updatedAt"].stringValue.toDate()?.date else{fatalError()}
+                            
+                        
+
                         
                         let game = Game()
                         game.objectId = objectId
@@ -79,39 +99,9 @@ class GetModel: NSObject {
                         game.createdAt = createdAt
                         game.updatedAt = updatedAt
                     
-                        
-                    }
-                    
-            
-            
-//            let jsonDict = jsonResult as! [String:String]
-//            let name = jsonDict["name"]
-//            let universe = jsonDict["universe"]
-            
-            
-            
-//
-//            let payloadNoSplit = hex2ascii(example: jsonDict["payload"]!)
-//            let date = jsonDict["reg_date"]
-//            let latlonid = split(str: payloadNoSplit)
-//
-//            let lat = Double(latlonid.0)
-//            let lon = Double(latlonid.1)
-//            let id = latlonid.2
-//
-//
-//
-//            let loc = LocationAnnotation()
-//            loc.coordinate = CLLocationCoordinate2DMake(lat!, lon!)
-//            loc.title = id
-//            loc.subtitle = date
-//
-//
-//
-//            locationArray.append(loc)
-//
-//
-            
+                        saveGame(game: game)
+
+            }
         }
     }
     

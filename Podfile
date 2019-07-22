@@ -7,6 +7,9 @@ target 'Koombea-iOSTest' do
   pod 'SwiftyJSON'
   pod 'Alamofire'
   pod 'RealmSwift'
+  pod 'SwiftDate', '~> 6.0'
+  pod 'PullToRefresher', '~> 3.1'
+  pod 'RangeSeekSlider'
   # Pods for Koombea-iOSTest
 
 

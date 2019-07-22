@@ -13,7 +13,6 @@
         <!--Game View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="mainVC" id="BYZ-38-t0r" customClass="GameViewController" customModule="Koombea_iOSTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -38,8 +37,48 @@
                         <outlet property="gameDataTableView" destination="yyv-hv-Rir" id="0QI-Td-H7j"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1682.608695652174" y="122.54464285714285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vLr-fQ-Iwh">
+            <objects>
+                <viewController id="Wfo-VT-U51" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ebS-7q-fXM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5o0-ar-VYt">
+                                <rect key="frame" x="0.0" y="44" width="414" height="152"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="ird-gc-Msg"/>
+                                </constraints>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VdT-Zy-XwI">
+                                <rect key="frame" x="0.0" y="204" width="414" height="74"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="WOZ-hl-rEw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VdT-Zy-XwI" firstAttribute="trailing" secondItem="0d5-UF-T7Z" secondAttribute="trailing" id="7Ii-XV-rH6"/>
+                            <constraint firstItem="VdT-Zy-XwI" firstAttribute="leading" secondItem="0d5-UF-T7Z" secondAttribute="leading" id="A6Y-ST-1dM"/>
+                            <constraint firstItem="5o0-ar-VYt" firstAttribute="trailing" secondItem="0d5-UF-T7Z" secondAttribute="trailing" id="DKy-Mc-d4K"/>
+                            <constraint firstItem="5o0-ar-VYt" firstAttribute="leading" secondItem="0d5-UF-T7Z" secondAttribute="leading" id="LvV-oD-DcM"/>
+                            <constraint firstItem="5o0-ar-VYt" firstAttribute="top" secondItem="0d5-UF-T7Z" secondAttribute="top" id="P9g-ml-bZ0"/>
+                            <constraint firstItem="VdT-Zy-XwI" firstAttribute="top" secondItem="5o0-ar-VYt" secondAttribute="bottom" constant="8" id="jUI-eS-Qyw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0d5-UF-T7Z"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XRb-xd-EPY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3011.594202898551" y="122.54464285714285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="u0D-jk-XUT">

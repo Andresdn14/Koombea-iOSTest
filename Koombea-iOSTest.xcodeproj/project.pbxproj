@@ -10,7 +10,7 @@
 		046531C322E3CD2900C40608 /* OnBoardingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046531C222E3CD2900C40608 /* OnBoardingButton.swift */; };
 		046531CA22E4280300C40608 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046531C922E4280200C40608 /* LaunchScreen.storyboard */; };
 		046531CC22E435F500C40608 /* GetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046531CB22E435F500C40608 /* GetModel.swift */; };
-		046531CE22E4CD4600C40608 /* GamesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046531CD22E4CD4600C40608 /* GamesData.swift */; };
+		046531CE22E4CD4600C40608 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046531CD22E4CD4600C40608 /* Game.swift */; };
 		04CE742C22E2D5330099D708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE742B22E2D5330099D708 /* AppDelegate.swift */; };
 		04CE742E22E2D5330099D708 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE742D22E2D5330099D708 /* GameViewController.swift */; };
 		04CE743122E2D5330099D708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CE742F22E2D5330099D708 /* Main.storyboard */; };
@@ -27,7 +27,7 @@
 		046531C222E3CD2900C40608 /* OnBoardingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingButton.swift; sourceTree = "<group>"; };
 		046531C922E4280200C40608 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		046531CB22E435F500C40608 /* GetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetModel.swift; sourceTree = "<group>"; };
-		046531CD22E4CD4600C40608 /* GamesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesData.swift; sourceTree = "<group>"; };
+		046531CD22E4CD4600C40608 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		04CE742822E2D5330099D708 /* Koombea-iOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Koombea-iOSTest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CE742B22E2D5330099D708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04CE742D22E2D5330099D708 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		046531C422E4240B00C40608 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				046531CD22E4CD4600C40608 /* GamesData.swift */,
+				046531CD22E4CD4600C40608 /* Game.swift */,
 				046531CB22E435F500C40608 /* GetModel.swift */,
 			);
 			path = Model;
@@ -223,16 +223,22 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Koombea-iOSTest/Pods-Koombea-iOSTest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/PullToRefresher/PullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/RangeSeekSlider/RangeSeekSlider.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RangeSeekSlider.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +279,7 @@
 				04CE744122E2DC630099D708 /* OnboardingFirstViewController.swift in Sources */,
 				046531C322E3CD2900C40608 /* OnBoardingButton.swift in Sources */,
 				04CE744522E2DC8A0099D708 /* OnboardingThirdViewController.swift in Sources */,
-				046531CE22E4CD4600C40608 /* GamesData.swift in Sources */,
+				046531CE22E4CD4600C40608 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

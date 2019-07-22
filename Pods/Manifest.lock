@@ -3,34 +3,46 @@ PODS:
   - ChameleonFramework (2.1.0):
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
+  - PullToRefresher (3.1)
+  - RangeSeekSlider (1.8.0)
   - Realm (3.17.1):
     - Realm/Headers (= 3.17.1)
   - Realm/Headers (3.17.1)
   - RealmSwift (3.17.1):
     - Realm (= 3.17.1)
+  - SwiftDate (6.0.3)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Alamofire
   - ChameleonFramework
+  - PullToRefresher (~> 3.1)
+  - RangeSeekSlider
   - RealmSwift
+  - SwiftDate (~> 6.0)
   - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - ChameleonFramework
+    - PullToRefresher
+    - RangeSeekSlider
     - Realm
     - RealmSwift
+    - SwiftDate
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  PullToRefresher: ec8c1942bd61bb512ff520c49f9f00903cfa86c7
+  RangeSeekSlider: 650b11fa1edcb92e1e0ede797669d98622570fb5
   Realm: c204f1a890f07dea43b14132a6aad118c054b8f2
   RealmSwift: 4d3c9233544b9cd08a8913e0872b9038eb99b054
+  SwiftDate: 8d4f14bf1ef68e95094511504856547bf9e3e1a6
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: d74b25c1031e4cfe2757aec7d1568d7ea8654097
+PODFILE CHECKSUM: d8979a760ae214b5363d4e1ce25a06de471c0bf5
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.5.3
