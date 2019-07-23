@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0450749C22E694A900D7DF74 /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450749B22E694A900D7DF74 /* FilterTableViewCell.swift */; };
+		0450749E22E69D0900D7DF74 /* GameFilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450749D22E69D0900D7DF74 /* GameFilterTableViewCell.swift */; };
+		045074A022E6B50400D7DF74 /* customSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450749F22E6B50400D7DF74 /* customSlider.swift */; };
+		045074A222E6DFEB00D7DF74 /* FiltersAppliedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045074A122E6DFEB00D7DF74 /* FiltersAppliedViewController.swift */; };
 		046531C322E3CD2900C40608 /* OnBoardingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046531C222E3CD2900C40608 /* OnBoardingButton.swift */; };
 		046531CA22E4280300C40608 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046531C922E4280200C40608 /* LaunchScreen.storyboard */; };
 		046531CC22E435F500C40608 /* GetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046531CB22E435F500C40608 /* GetModel.swift */; };
 		046531CE22E4CD4600C40608 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046531CD22E4CD4600C40608 /* Game.swift */; };
+		0477178122E597BF00A98032 /* GamesFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477178022E597BF00A98032 /* GamesFilter.swift */; };
+		04893D1222E55DCC00569257 /* ApplyButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04893D1122E55DCC00569257 /* ApplyButtonStyle.swift */; };
+		04893D1422E56FE700569257 /* FilterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04893D1322E56FE700569257 /* FilterPageViewController.swift */; };
 		04CE742C22E2D5330099D708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE742B22E2D5330099D708 /* AppDelegate.swift */; };
 		04CE742E22E2D5330099D708 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE742D22E2D5330099D708 /* GameViewController.swift */; };
 		04CE743122E2D5330099D708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CE742F22E2D5330099D708 /* Main.storyboard */; };
@@ -24,10 +31,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0450749B22E694A900D7DF74 /* FilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
+		0450749D22E69D0900D7DF74 /* GameFilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFilterTableViewCell.swift; sourceTree = "<group>"; };
+		0450749F22E6B50400D7DF74 /* customSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customSlider.swift; sourceTree = "<group>"; };
+		045074A122E6DFEB00D7DF74 /* FiltersAppliedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersAppliedViewController.swift; sourceTree = "<group>"; };
 		046531C222E3CD2900C40608 /* OnBoardingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingButton.swift; sourceTree = "<group>"; };
 		046531C922E4280200C40608 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		046531CB22E435F500C40608 /* GetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetModel.swift; sourceTree = "<group>"; };
 		046531CD22E4CD4600C40608 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		0477178022E597BF00A98032 /* GamesFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesFilter.swift; sourceTree = "<group>"; };
+		04893D1122E55DCC00569257 /* ApplyButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ApplyButtonStyle.swift; path = ../Controller/ApplyButtonStyle.swift; sourceTree = "<group>"; };
+		04893D1322E56FE700569257 /* FilterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPageViewController.swift; sourceTree = "<group>"; };
 		04CE742822E2D5330099D708 /* Koombea-iOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Koombea-iOSTest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CE742B22E2D5330099D708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04CE742D22E2D5330099D708 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +73,7 @@
 		046531C422E4240B00C40608 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0477178022E597BF00A98032 /* GamesFilter.swift */,
 				046531CD22E4CD4600C40608 /* Game.swift */,
 				046531CB22E435F500C40608 /* GetModel.swift */,
 			);
@@ -69,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				04CE742F22E2D5330099D708 /* Main.storyboard */,
+				04893D1122E55DCC00569257 /* ApplyButtonStyle.swift */,
+				0450749F22E6B50400D7DF74 /* customSlider.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -76,8 +93,12 @@
 		046531C822E424DB00C40608 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				04CE742B22E2D5330099D708 /* AppDelegate.swift */,
 				04CE742D22E2D5330099D708 /* GameViewController.swift */,
+				04893D1322E56FE700569257 /* FilterPageViewController.swift */,
+				045074A122E6DFEB00D7DF74 /* FiltersAppliedViewController.swift */,
+				0450749B22E694A900D7DF74 /* FilterTableViewCell.swift */,
+				0450749D22E69D0900D7DF74 /* GameFilterTableViewCell.swift */,
+				04CE742B22E2D5330099D708 /* AppDelegate.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -227,6 +248,7 @@
 				"${BUILT_PRODUCTS_DIR}/RangeSeekSlider/RangeSeekSlider.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -238,6 +260,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RangeSeekSlider.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -273,11 +296,18 @@
 			files = (
 				04CE742E22E2D5330099D708 /* GameViewController.swift in Sources */,
 				04CE744322E2DC7D0099D708 /* OnboardingSecondViewController.swift in Sources */,
+				0450749C22E694A900D7DF74 /* FilterTableViewCell.swift in Sources */,
+				04893D1222E55DCC00569257 /* ApplyButtonStyle.swift in Sources */,
+				045074A222E6DFEB00D7DF74 /* FiltersAppliedViewController.swift in Sources */,
+				04893D1422E56FE700569257 /* FilterPageViewController.swift in Sources */,
 				046531CC22E435F500C40608 /* GetModel.swift in Sources */,
 				04CE742C22E2D5330099D708 /* AppDelegate.swift in Sources */,
 				04CE744922E3A4430099D708 /* GradientView.swift in Sources */,
+				0477178122E597BF00A98032 /* GamesFilter.swift in Sources */,
 				04CE744122E2DC630099D708 /* OnboardingFirstViewController.swift in Sources */,
+				045074A022E6B50400D7DF74 /* customSlider.swift in Sources */,
 				046531C322E3CD2900C40608 /* OnBoardingButton.swift in Sources */,
+				0450749E22E69D0900D7DF74 /* GameFilterTableViewCell.swift in Sources */,
 				04CE744522E2DC8A0099D708 /* OnboardingThirdViewController.swift in Sources */,
 				046531CE22E4CD4600C40608 /* Game.swift in Sources */,
 			);
@@ -420,6 +450,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P48P2G5UA9;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "Koombea-iOSTest/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -439,6 +470,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P48P2G5UA9;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "Koombea-iOSTest/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

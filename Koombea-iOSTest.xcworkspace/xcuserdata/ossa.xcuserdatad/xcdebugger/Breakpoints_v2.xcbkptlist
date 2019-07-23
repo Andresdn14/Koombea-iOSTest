@@ -2,4 +2,114 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Koombea-iOSTest/Controller/FilterTableViewCell.swift"
+            timestampString = "585573247.1672"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "FilterCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Koombea_iOSTest.FilterCell.checkedButton.getter : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "Koombea-iOSTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ossa/Desktop/Koombea-iOSTest/Koombea-iOSTest/Controller/FilterTableViewCell.swift"
+                  timestampString = "585561194.578312"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Koombea_iOSTest.FilterCell.checkedButton.setter : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "Koombea-iOSTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ossa/Desktop/Koombea-iOSTest/Koombea-iOSTest/Controller/FilterTableViewCell.swift"
+                  timestampString = "585561194.58006"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Koombea_iOSTest.FilterCell.checkedButton.modify : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "Koombea-iOSTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ossa/Desktop/Koombea-iOSTest/Koombea-iOSTest/Controller/FilterTableViewCell.swift"
+                  timestampString = "585561194.5815541"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Koombea_iOSTest.FilterCell.checkedButton.modify : Swift.Optional&lt;__C.UIButton&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Koombea-iOSTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ossa/Desktop/Koombea-iOSTest/Koombea-iOSTest/Controller/FilterTableViewCell.swift"
+                  timestampString = "585561194.5829231"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Koombea_iOSTest.FilterCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; Koombea_iOSTest.FilterCell"
+                  moduleName = "Koombea-iOSTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ossa/Desktop/Koombea-iOSTest/Koombea-iOSTest/Controller/FilterTableViewCell.swift"
+                  timestampString = "585561194.584273"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Koombea_iOSTest.FilterCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Koombea_iOSTest.FilterCell&gt;"
+                  moduleName = "Koombea-iOSTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ossa/Desktop/Koombea-iOSTest/Koombea-iOSTest/Controller/FilterTableViewCell.swift"
+                  timestampString = "585561194.585593"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "112">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

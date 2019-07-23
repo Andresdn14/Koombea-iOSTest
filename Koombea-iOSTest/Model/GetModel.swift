@@ -60,6 +60,7 @@ class GetModel: NSObject {
         }
     }
     
+
     
     func JSONProcessing(json:JSON){
         
@@ -70,12 +71,14 @@ class GetModel: NSObject {
                         let objectId:String = json["results"][i]["objectId"].stringValue
                         let name:String = json["results"][i]["name"].stringValue
                         let universe:String = json["results"][i]["universe"].stringValue
-                        let price:String = json["results"][i]["price"].stringValue
+                        let pricestr = json["results"][i]["price"].stringValue
+                        let pricestr2:String = pricestr.replacingOccurrences(of: ",", with: ".")
+                        let price:Double = (pricestr2 as NSString).doubleValue
                         let imageurl:String = json["results"][i]["imageURL"].stringValue
                         let kind:String = json["results"][i]["kind"].stringValue
                         let popular:Bool = json["results"][i]["popular"].boolValue
                         let rating:String = json["results"][i]["rating"].stringValue
-                        let downloads:String = json["results"][i]["downloads"].stringValue
+                        let downloads:Int = Int(json["results"][i]["downloads"].stringValue)!
                         let descripti:String = json["results"][i]["description"].stringValue
                         let SKU:String = json["results"][i]["SKU"].stringValue
                         guard let createdAt = json["results"][i]["createdAt"].stringValue.toDate()?.date else{fatalError()}
@@ -100,6 +103,7 @@ class GetModel: NSObject {
                         game.updatedAt = updatedAt
                     
                         saveGame(game: game)
+                        
 
             }
         }

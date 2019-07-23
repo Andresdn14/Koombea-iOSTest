@@ -10,6 +10,9 @@ PODS:
   - Realm/Headers (3.17.1)
   - RealmSwift (3.17.1):
     - Realm (= 3.17.1)
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
   - SwiftDate (6.0.3)
   - SwiftyJSON (5.0.0)
 
@@ -19,6 +22,7 @@ DEPENDENCIES:
   - PullToRefresher (~> 3.1)
   - RangeSeekSlider
   - RealmSwift
+  - SDWebImage (~> 5.0)
   - SwiftDate (~> 6.0)
   - SwiftyJSON
 
@@ -30,6 +34,7 @@ SPEC REPOS:
     - RangeSeekSlider
     - Realm
     - RealmSwift
+    - SDWebImage
     - SwiftDate
     - SwiftyJSON
 
@@ -40,9 +45,10 @@ SPEC CHECKSUMS:
   RangeSeekSlider: 650b11fa1edcb92e1e0ede797669d98622570fb5
   Realm: c204f1a890f07dea43b14132a6aad118c054b8f2
   RealmSwift: 4d3c9233544b9cd08a8913e0872b9038eb99b054
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
   SwiftDate: 8d4f14bf1ef68e95094511504856547bf9e3e1a6
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: d8979a760ae214b5363d4e1ce25a06de471c0bf5
+PODFILE CHECKSUM: a74abf65c2bee540f69268a8a1c767c16f58f298
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.5.2

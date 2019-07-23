@@ -13,12 +13,12 @@ class Game:Object {
     @objc dynamic var objectId: String = ""
     @objc dynamic var name: String = ""
     @objc dynamic var universe: String = ""
-    @objc dynamic var price: String = ""
+    @objc dynamic var price: Double = 0.0
     @objc dynamic var imageURL: String = ""
     @objc dynamic var kind: String = ""
     @objc dynamic var popular: Bool = false
     @objc dynamic var rating: String = ""
-    @objc dynamic var downloads: String = ""
+    @objc dynamic var downloads: Int = 0
     @objc dynamic var descripti: String = ""
     @objc dynamic var SKU: String = ""
     @objc dynamic var createdAt = Date()

@@ -15,17 +15,18 @@ import PullToRefresh
 class GameViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
 
     @IBOutlet weak var gameDataTableView: UITableView!
-    var setVar = 0
     let getModel = GetModel()
     let realm = try! Realm()
     let refresher = PullToRefresh()
+
     var games: Results<Game>?{
         didSet{
             self.gameDataTableView.reloadData()
         }
     }
     
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,6 +38,9 @@ class GameViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     deinit {
         gameDataTableView.removePullToRefresh(at: .top)
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
     }
 
     func refresh(){
@@ -54,21 +58,9 @@ class GameViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
 
 
     
-    func deleteAll(){
-        do{
-            try realm.write {
-                realm.deleteAll()
-            }
-        }catch{
-            print("Error at deleting")
-        }
-    }
-
-
-    
     func loadGames(){
         games = realm.objects(Game.self)
-        setVar = 1
+        gameDataTableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

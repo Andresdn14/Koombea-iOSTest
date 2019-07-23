@@ -10,6 +10,7 @@ target 'Koombea-iOSTest' do
   pod 'SwiftDate', '~> 6.0'
   pod 'PullToRefresher', '~> 3.1'
   pod 'RangeSeekSlider'
+  pod 'SDWebImage', '~> 5.0'
   # Pods for Koombea-iOSTest
 
 
